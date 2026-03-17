@@ -12,9 +12,6 @@ function result(){
 
     }
         
-    
-
-
     let changeColor=document.getElementById('text');
     changeColor.style.color="Red";
     
