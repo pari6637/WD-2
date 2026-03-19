@@ -78,6 +78,48 @@
             console.log("Hello World")
         })();
         (msg=>console.log("hello"))();
+        //Promises-
+        /*states: Promises exist in one of the three states:
+        Pending:*/
+        let myPromise=new Promise(function(resolve,reject){
+            let age=25;
+            if(age>=18){
+                resolve("valid age");
+            }
+            else{
+                reject("wait for next year");
+            }
+        });
+        myPromise.then(msg=>console.log(msg)).catch(error=>console.log(error));
+
+        //async and await are modern JavaScript keywords (introduced in ES2017) that provide a cleaner, more readable way to work with Promises by allowing asynchronous code to be written in a synchronous like style
+
+        //API..https://dummyjson.com/products
+        function userInfo(){
+
+        
+try{
+        let userData= fetch('https://api.github.com/pari6637/WD-2');
+        let response=userData.json();
+        console.log(response);
+        } //try end
+       
+        catch(error){
+            console.log(error);
+        }//catch end
+    }//function end
+    userInfo();
+
+let num=[4,6,7,8,9,3,2,1];
+
+        
+//local storage- javascript localstorage is a feature that allows web applications to store key value pairs persistently within the user's browser, with ni expiration date
+
+let myInfo={
+    name:'Pari';
+    
+
+}
 
 
     </script>
