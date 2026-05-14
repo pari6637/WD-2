@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JS</title>
+</head>
+<body>
+    <script>
+        //JavaScript provides several types of loops to execute a block of code repeatedly until a specific condition is met. 
+
+        //types of loops
+        let studentList=["Aditya","Pranjal","Yash","Mauli","Ashmit","Yachi",
+            20,19,27,29,28,26]
+
+
+        //for loops
+        for(let i=0;i<studentList.length;i++){
+            console.log(studentList[0][1]);
+            console.log(studentList[3]);
+        }
+
+        //while
+        let i=0;
+        while(i<=studentList.length){
+            console.log(studentList[5]);
+            i++;
+        }
+
+        //for.of
+        for(let x of studentList){
+            console.lof(x);
+        }
+    </script>
+</body>
+</html>
